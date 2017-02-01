@@ -51,6 +51,7 @@ this.Icon=_Zocial2.default;
 break;
 case'MaterialCommunity':
 this.Icon=_MaterialCommunityIcons2.default;
+break;
 default:
 this.Icon=_Ionicons2.default;}
 
