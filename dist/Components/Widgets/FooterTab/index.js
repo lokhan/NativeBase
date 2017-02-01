@@ -108,7 +108,8 @@ onPress:child.props.onPress},
 children,
 _react2.default.createElement(_Icon2.default,{
 style:{color:child.props.active?_this2.getTheme().tabBarActiveTextColor:_this2.getTheme().tabBarTextColor},
-name:iconElement[0].props.name})),
+name:iconElement[0].props.name,
+iconFamily:iconElement[0].props.iconFamily})),
 
 _react2.default.createElement(_Badge2.default,{style:{position:'absolute',top:4,right:length==2?68:length==3?36:length==4?20:undefined,height:18,paddingHorizontal:6,padding:1.5,backgroundColor:badgeElement[0].props.badgeColor?badgeElement[0].props.badgeColor:undefined},textStyle:{fontSize:11,lineHeight:14,color:badgeElement[0].props.textColor?badgeElement[0].props.textColor:undefined}},
 badgeElement[0].props.children)));
@@ -126,7 +127,8 @@ textStyle:child.props.active?_this2.getInitialStyle().btnActiveTextStyle:_this2.
 onPress:child.props.onPress},
 _react2.default.createElement(_Icon2.default,{
 style:{color:child.props.active?_this2.getTheme().tabBarActiveTextColor:_this2.getTheme().tabBarTextColor},
-name:iconElement[0].props.name})),
+name:iconElement[0].props.name,
+iconFamily:iconElement[0].props.iconFamily})),
 
 _react2.default.createElement(_Badge2.default,{style:{position:'absolute',top:4,right:length==2?68:length==3?36:length==4?20:undefined,height:18,paddingHorizontal:6,padding:1.5,backgroundColor:badgeElement[0].props.badgeColor?badgeElement[0].props.badgeColor:undefined},textStyle:{fontSize:11,lineHeight:14,color:badgeElement[0].props.textColor?badgeElement[0].props.textColor:undefined}},
 badgeElement[0].props.children)));
@@ -145,7 +147,8 @@ key:i,onPress:child.props.onPress},
 children,
 _react2.default.createElement(_Icon2.default,{
 style:{color:child.props.active?_this2.getTheme().tabBarActiveTextColor:_this2.getTheme().tabBarTextColor},
-name:iconElement[0].props.name})));
+name:iconElement[0].props.name,
+iconFamily:iconElement[0].props.iconFamily})));
 
 
 }
@@ -159,7 +162,8 @@ key:i,onPress:child.props.onPress},
 _react2.default.createElement(_Icon2.default,{
 style:{color:child.props.active?_this2.getTheme().tabBarActiveTextColor:_this2.getTheme().tabBarTextColor,
 fontSize:28,height:30,lineHeight:28},
-name:children.props.name})));
+name:children.props.name,
+iconFamily:iconElement[0].props.iconFamily})));
 
 
 }
