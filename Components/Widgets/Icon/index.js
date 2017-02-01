@@ -12,11 +12,13 @@ import Foundation from 'react-native-vector-icons/Foundation';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Zocial from 'react-native-vector-icons/Zocial';
+import MaterialCommunityIcons from 'react-native-icons/MaterialCommunityIcons';
 
 export default class Icon extends NativeBaseComponent {
 
     propTypes: {
-        style : React.PropTypes.object
+        style : React.PropTypes.object,
+        iconFamily: React.PropTypes.string
     }
 
     contextTypes: {
@@ -24,7 +26,8 @@ export default class Icon extends NativeBaseComponent {
     }
 
     componentWillMount() {
-        switch(this.getTheme().iconFamily) {
+        const iconFamily = this.props.iconFamily ? this.props.iconFamily : this.getTheme().iconFamily;
+        switch(iconFamily) {
             case 'Ionicons':
                 this.Icon = Ionicons;
                 break;
@@ -46,6 +49,8 @@ export default class Icon extends NativeBaseComponent {
             case 'Zocial':
                 this.Icon = Zocial;
                 break;
+            case 'MaterialCommunity':
+                this.Icon = MaterialCommunityIcons;
             default:
                 this.Icon = Ionicons;
         }
